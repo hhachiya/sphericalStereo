@@ -33,7 +33,7 @@ def calibration(square_size=38,corner_size=(4,3),img_num=20):
         obj_points[i,0] = square_size*3 - obj_points[i,0]
 
     for i in range(idx.shape[1]):
-        if idx[0,i] > 61:
+        if idx[0,i] > 62:
             #pdb.set_trace()
             #前(鏡像)の画像    
             img = cv2.imread(f"stereo26/LBack26/cut{idx[0,i]:02d}.png")
